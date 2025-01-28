@@ -5,14 +5,11 @@ package SimpleBankingSystem;
 */
 public class Main {
 	 public static void main(String[] args) {
-		Account myAccount;
+		
 	        
-	    myAccount = new Account("Flor Martinez", "1000-1234-56-123456789", 2500);
+	   Account myAccount = new Account("Albert Prats", "1000-1234-56-123456789", 2500);
 	     
 	    
-	     
-	   
-
 	     System.out.println("El saldo actual es " + myAccount.getBalance());   
 	 }
 	 
@@ -36,6 +33,10 @@ public class Main {
 	 public static void excepciones(Exception e, String message) {
 		 System.err.println(e.getMessage());
 		 System.out.println(message);
+	 }
+	 
+	 public static Account abrirCuenta(String name, String account, double amount) {
+		 return new Account(name, account, amount);
 	 }
 	 
 	 
