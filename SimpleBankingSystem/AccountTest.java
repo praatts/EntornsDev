@@ -10,7 +10,7 @@ class AccountTest {
 	@Test
 	void testDepositAmount() {
 		try {
-			myAccount.depositAmount(200);
+			myAccount.depositAmount(-100);
 		} catch (Exception e) {
 			System.err.println(e.getMessage());
 			System.out.println("Error en l'ingrés");
