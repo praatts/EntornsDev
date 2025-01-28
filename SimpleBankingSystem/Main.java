@@ -11,13 +11,7 @@ public class Main {
 	     
 	    
 	     
-	    try {
-	    	 System.out.println("Ingrés al compte");
-	    	 myAccount.depositAmount(-1);
-	    } catch(Exception e){
-	    	 System.err.println(e.getMessage());
-	         System.out.println("Error en l'ingrés");
-	    }
+	   
 
 	     System.out.println("El saldo actual es " + myAccount.getBalance());   
 	 }
@@ -29,5 +23,15 @@ public class Main {
 	        	System.err.println(e.getMessage());
 	            System.out.println("Error al retirar");
 		    }
+	 }
+	 
+	 public static void ingresarDinero(Account myAccount, double amount) {
+		 try {
+	    	 System.out.println("Ingrés al compte");
+	    	 myAccount.depositAmount(-1);
+	    } catch(Exception e){
+	    	 System.err.println(e.getMessage());
+	         System.out.println("Error en l'ingrés");
+	    }
 	 }
 }
