@@ -10,7 +10,6 @@ public class Main {
 	   Account myAccount = new Account("Albert Prats", "1000-1234-56-123456789", 2500);
 	     
 	    
-	     System.out.println("El saldo actual es " + myAccount.getBalance());   
 	 }
 	 
 	 public static void retirarDinero(Account myAccount, double amount) {
@@ -37,6 +36,11 @@ public class Main {
 	 
 	 public static Account abrirCuenta(String name, String account, double amount) {
 		 return new Account(name, account, amount);
+	 }
+	 
+	 public static void mostrarBalance(Account myAccount) {
+	     System.out.println("El saldo actual es " + myAccount.getBalance());   
+
 	 }
 	 
 	 
