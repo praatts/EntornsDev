@@ -34,4 +34,9 @@ public class Main {
 	         System.out.println("Error en l'ingrés");
 	    }
 	 }
+	 
+	 public static void excepciones(Exception e, String message) {
+		 System.err.println(e.getMessage());
+		 System.out.println(message);
+	 }
 }
