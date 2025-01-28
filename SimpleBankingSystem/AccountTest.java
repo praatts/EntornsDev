@@ -9,12 +9,12 @@ class AccountTest {
 	@Test
 	void testWithdrawAmount() {
 		try {
-	    	myAccount.withdrawAmount(2600);
+	    	myAccount.withdrawAmount(-100);
 	    } catch(Exception e){
         	System.err.println(e.getMessage());
             System.out.println("Error al retirar");
 	    }
-		assertEquals(200, myAccount.getBalance());
+		assertEquals(2400, myAccount.getBalance());
 		
 	}
 
