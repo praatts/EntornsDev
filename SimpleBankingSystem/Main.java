@@ -20,8 +20,7 @@ public class Main {
 		 try {
 		    	myAccount.withdrawAmount(2300);
 		    } catch(Exception e){
-	        	System.err.println(e.getMessage());
-	            System.out.println("Error al retirar");
+	        	excepciones(e, "Error al retirar");
 		    }
 	 }
 	 
@@ -30,8 +29,7 @@ public class Main {
 	    	 System.out.println("Ingrés al compte");
 	    	 myAccount.depositAmount(-1);
 	    } catch(Exception e){
-	    	 System.err.println(e.getMessage());
-	         System.out.println("Error en l'ingrés");
+	    	 excepciones(e, "Error en l'ingrés");
 	    }
 	 }
 	 
@@ -39,4 +37,6 @@ public class Main {
 		 System.err.println(e.getMessage());
 		 System.out.println(message);
 	 }
+	 
+	 
 }
